@@ -13,11 +13,11 @@ export const Tbody = styled.tbody`
   text-align: left;
   color: #7b7777e7;
   tr:nth-child(even) {
-    background-color: #ffffffe7;
+    background-color: ${p => p.theme.colors.lightGrey};
   }
 
   tr:nth-child(odd) {
-    background-color: #b7bbbbea;
+    background-color: ${p => p.theme.colors.grey};
   }
 `;
 
@@ -26,7 +26,7 @@ export const Trow = styled.tr`
 `;
 
 export const Thead = styled.thead`
-  background-color: #00bfffe9;
+  background-color: ${p => p.theme.colors.bcgBlue};
   height: 40px;
   color: #f4f4f4e9;
 `;

@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 
 export const ListOfFriends = styled.ul`
-  background-color: grey;
+  background-color: ${p => p.theme.colors.bcgGrey};
   width: 350px;
   display: flex;
   flex-direction: column;
 
   gap: 15px;
-  border-radius: ${p => p.theme.radii.l};
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
 `;
 
 export const ItemOfFriends = styled.li`
@@ -29,7 +32,7 @@ export const ItemOfFriends = styled.li`
   align-items: center;
   gap: 10px;
   border-radius: ${p => p.theme.radii.s};
-  background-color: aquamarine;
+  background-color: ${p => p.theme.colors.paleBlue};
   padding-top: 8px;
   padding-left: 8px;
   padding-bottom: 8px;

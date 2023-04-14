@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  background-color: aquamarine;
+  background-color: ${p => p.theme.colors.bcgGrey};
+  color: ${p => p.theme.colors.text};
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -22,6 +23,6 @@ export const ItemStat = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border-radius: ${p => p.theme.radii.s}; */
+
   background-color: beige;
 `;
